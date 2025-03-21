@@ -24,3 +24,4 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+/* Used https://www.w3schools.com/js/js_functions.asp to know about javascript and took some ideas */
