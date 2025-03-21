@@ -1,20 +1,20 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-/* Box-sizing reset */
+/* Box-sizing reset (https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/) */
 html {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 *, *:before, *:after {
-    box-sizing: inherit;
+	box-sizing: inherit;
 }
 
 html {
-    font-family: "Open Sans", sans-serif;
+	font-family: "Open Sans", sans-serif;
 }
 #container {
-    width: 80%;
-    margin: 0 auto;
+	width: 80%;
+	margin: 0 auto;
 }
 
 /* Style for tab list */
@@ -37,12 +37,10 @@ html {
     background: #e0e0e0;
     color: #333;
     font-weight: bold;
-    border: 2px solid black;
+    border: 1px solid #ccc;
     border-bottom: none;
     border-radius: 5px 5px 0 0;
     transition: background 0.3s ease-in-out;
-    position: relative;
-    z-index: 2; /* Ensures tabs appear above the content */
 }
 
 .tabs a:hover {
@@ -52,9 +50,9 @@ html {
 /* Active tab styling */
 .tabs a.active {
     background: white;
+    border-bottom: 2px solid white;
     position: relative;
     top: 2px;
-    border-bottom: 2px solid white;
 }
 
 /* Hide tab panels by default */
@@ -62,10 +60,9 @@ html {
     display: none;
     padding: 20px;
     border: 2px solid black;
+    border-top: none;
     border-radius: 0 0 5px 5px;
     background: white;
-    position: relative;
-    z-index: 1;
 }
 
 /* Show active panel */
