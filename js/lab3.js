@@ -1,8 +1,9 @@
+//Starting with the tabs with document.addEventListener
 document.addEventListener("DOMContentLoaded", function () {
     const tabs = document.querySelectorAll(".tabs ul li a");
     const panels = document.querySelectorAll("[role='tabpanel']");
 
-    // Set the first tab and panel as active
+    //To set the first tab and panel as active
     tabs[0].classList.add("active");
     panels[0].classList.add("active");
 
@@ -10,14 +11,14 @@ document.addEventListener("DOMContentLoaded", function () {
         tab.addEventListener("click", function (event) {
             event.preventDefault();
 
-            // Remove active classes from all tabs and panels
+            //To remove active classes from all tabs and panels
             tabs.forEach(t => t.classList.remove("active"));
             panels.forEach(p => p.classList.remove("active"));
 
-            // Add active class to the clicked tab
+            //To add active class to the clicked tab
             this.classList.add("active");
 
-            // Show the corresponding panel
+            //To show the corresponding panel
             const targetPanel = document.querySelector(this.getAttribute("href"));
             targetPanel.classList.add("active");
         });

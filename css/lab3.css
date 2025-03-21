@@ -17,7 +17,7 @@ html {
 	margin: 0 auto;
 }
 
-/* Style for tab list */
+/*To style thr tab list */
 .tabs ul {
     display: flex;
     list-style: none;
@@ -40,7 +40,7 @@ html {
     border: 1px solid #ccc;
     border-bottom: none;
     border-radius: 5px 5px 0 0;
-    transition: background 0.3s ease-in-out;
+    transition: background 0.3s ease-in-out;  /* Add a transition effect (when changing the background color) */
 }
 
 .tabs a:hover {
@@ -55,7 +55,7 @@ html {
     top: 2px;
 }
 
-/* Hide tab panels by default */
+/*To hide tab panels by default */
 [role="tabpanel"] {
     display: none;
     padding: 20px;
@@ -65,7 +65,7 @@ html {
     background: white;
 }
 
-/* Show active panel */
+/*To show active panel */
 [role="tabpanel"].active {
     display: block;
 }
